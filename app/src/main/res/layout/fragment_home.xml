@@ -9,84 +9,116 @@
     android:background="@color/white">
 
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="410dp"
-        android:layout_height="368dp"
-        android:background="#73D5ED"
+        android:layout_width="359dp"
+        android:layout_height="347dp"
+        android:background="#03CAFB"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="315dp"
+            android:layout_height="268dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="136dp"
-            android:layout_marginEnd="186dp"
-            android:layout_marginBottom="55dp"
-            android:text="Search" />
+            android:layout_margin="25dp"
 
-        <EditText
-            android:id="@+id/date"
-            android:layout_width="155dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="151dp"
-            android:layout_marginBottom="146dp"
-            android:ems="10"
-            android:hint="dd/mm/yyyy"
-            android:inputType="textPersonName"
-            android:textColorHint="#9A9A9A" />
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.609"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/editTextTextPersonName5"
-            android:layout_width="263dp"
-            android:layout_height="46dp"
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="120dp"
+                android:layout_marginBottom="24dp"
+                android:text="Search"
 
-            android:layout_alignParentStart="true"
+                android:background="#0D05FB"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="55dp"
-            android:layout_marginTop="122dp"
-            android:layout_marginEnd="92dp"
-            android:layout_marginBottom="200dp"
-            android:ems="20"
-            android:hint="Destination"
-            android:inputType="textPersonName"
-            android:textColorHint="#9A9A9A" />
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="88dp"
+                android:ems="10"
+                android:hint="dd/mm/yyyy"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="#9A9A9A"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@+id/button3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+                app:layout_constraintVertical_bias="0.195" />
 
-        <ImageView
-            android:id="@+id/ic"
-            android:layout_width="37dp"
-            android:layout_height="52dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="96dp"
-            android:layout_marginBottom="139dp"
-            android:src="@drawable/calender" />
+            <EditText
+                android:id="@+id/editTextTextPersonName5"
+                android:layout_width="263dp"
+                android:layout_height="46dp"
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="54dp"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/editTextTextPersonName5"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="58dp"
-            android:layout_marginEnd="298dp"
-            android:layout_marginBottom="-43dp"
-            android:text="Date :-"
-            android:textColor="@color/black" />
+                android:layout_alignParentStart="true"
 
-    </RelativeLayout>
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="64dp"
+                android:ems="20"
+                android:hint="Destination"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:inputType="textPersonName"
+                android:textColorHint="#9A9A9A"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.461"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ic"
+                android:layout_width="37dp"
+                android:layout_height="52dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="68dp"
+                android:src="@drawable/calender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editTextTextPersonName5"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Date :-"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
