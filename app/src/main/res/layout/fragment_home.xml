@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="410dp"
+        android:layout_height="368dp"
+        android:background="#73D5ED"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="136dp"
+            android:layout_marginEnd="186dp"
+            android:layout_marginBottom="55dp"
+            android:text="Search" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="151dp"
+            android:layout_marginBottom="146dp"
+            android:ems="10"
+            android:hint="dd/mm/yyyy"
+            android:inputType="textPersonName"
+            android:textColorHint="#9A9A9A" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName5"
+            android:layout_width="263dp"
+            android:layout_height="46dp"
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="122dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="200dp"
+            android:ems="20"
+            android:hint="Destination"
+            android:inputType="textPersonName"
+            android:textColorHint="#9A9A9A" />
+
+        <ImageView
+            android:id="@+id/ic"
+            android:layout_width="37dp"
+            android:layout_height="52dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="139dp"
+            android:src="@drawable/calender" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextTextPersonName5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="58dp"
+            android:layout_marginEnd="298dp"
+            android:layout_marginBottom="-43dp"
+            android:text="Date :-"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
