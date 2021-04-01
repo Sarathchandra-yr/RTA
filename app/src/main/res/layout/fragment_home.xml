@@ -21,8 +21,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="315dp"
-            android:layout_height="268dp"
+            android:layout_width="322dp"
+            android:layout_height="250dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
@@ -44,9 +44,9 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="120dp"
                 android:layout_marginBottom="24dp"
-                android:text="Search"
-
                 android:background="#0D05FB"
+
+                android:text="Search"
                 android:textStyle="italic"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -82,10 +82,10 @@
                 android:layout_marginTop="64dp"
                 android:ems="20"
                 android:hint="Destination"
-                android:textColor="@color/black"
-                android:textStyle="italic"
                 android:inputType="textPersonName"
+                android:textColor="@color/black"
                 android:textColorHint="#9A9A9A"
+                android:textStyle="italic"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.461"
                 app:layout_constraintStart_toStartOf="parent"
