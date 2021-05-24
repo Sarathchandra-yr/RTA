@@ -44,14 +44,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         mAuth = FirebaseAuth.getInstance();
-
-
 
         textView =(TextView)findViewById(R.id.textView2);
         str = textView.toString();
-        emal = (EditText)findViewById(R.id.emal);
-        pass =(EditText)findViewById(R.id.password);
+
 
 
 
@@ -72,20 +71,36 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         lb =(Button)findViewById(R.id.button2);
-        lb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(view.getContext(),homesrn.class);
-                startActivity(i);
-            }
-            });
+
 
     }
 
-
     public void login(View view) {
+        emal = (EditText) findViewById(R.id.emal);
+        pass = (EditText) findViewById(R.id.password);
+        email = emal.getText().toString();
+        passwor = pass.getText().toString();
+        if (email.isEmpty() || passwor.isEmpty()) {
 
+            Toast.makeText(getApplicationContext(), "Empty not allowed", Toast.LENGTH_SHORT).show();
         }
+        else {
+            mAuth.signInWithEmailAndPassword(email, passwor)
+                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(getApplicationContext(), "Done", Toast.LENGTH_LONG).show();
+                                Intent i = new Intent(view.getContext(), homesrn.class);
+                                startActivity(i);
+                            } else {
+                                Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_LONG).show();
+                            }
+                        }
+                    });
+             }
+
+    }
 }
 
 

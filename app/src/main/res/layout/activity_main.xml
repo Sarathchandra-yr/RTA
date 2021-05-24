@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/rta">
+    android:background="@drawable/hs_bg">
 
 
     <EditText
@@ -19,7 +19,7 @@
         android:ems="10"
         android:hint="Email"
 
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,12 +34,13 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"
 
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,6 +68,7 @@
 
     <Button
         android:id="@+id/button2"
+        android:onClick="login"
         android:layout_width="204dp"
         android:layout_height="44dp"
         android:layout_marginTop="20dp"
